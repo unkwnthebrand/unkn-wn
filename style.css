@@ -389,21 +389,28 @@ body {
 /* Navbar */
 nav {
   display: flex;
-  justify-content: center;   /* center all tabs */
+  justify-content: center;   /* center all items */
   align-items: center;
-  gap: 30px;                 /* space between each tab */
-  flex-wrap: nowrap;         /* prevent wrapping onto new lines */
-  background-color: #000;    /* black background */
-  padding: 15px 0;
+  white-space: nowrap;       /* prevent text from breaking */
+  overflow-x: auto;          /* allow side scroll if screen is too small */
+  background-color: #000;
+  padding: 15px 10px;
+  gap: 25px;
 }
 
 nav a {
+  flex: 0 0 auto;            /* keep links from shrinking unevenly */
   color: white;
   text-decoration: none;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
   transition: color 0.2s ease-in-out;
 }
+
+nav a:hover {
+  color: #ff69b4; /* hover effect */
+}
+
 
 nav a:hover {
   color: #ff69b4;  /* highlight pink on hover */
