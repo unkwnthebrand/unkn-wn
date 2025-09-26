@@ -386,3 +386,25 @@ body {
   max-height: 90%;
   box-shadow: 0 8px 25px rgba(0,0,0,0.7);
 }
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: center;   /* center all tabs */
+  align-items: center;
+  gap: 30px;                 /* space between each tab */
+  flex-wrap: nowrap;         /* prevent wrapping onto new lines */
+  background-color: #000;    /* black background */
+  padding: 15px 0;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+  color: #ff69b4;  /* highlight pink on hover */
+}
